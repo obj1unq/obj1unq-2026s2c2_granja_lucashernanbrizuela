@@ -1,5 +1,5 @@
 import wollok.game.*
-import personaje.*
+import granja.personaje.*
 import cultivos.*
 
 program lagranja {
@@ -9,7 +9,8 @@ program lagranja {
 	game.width(10)
 	game.ground("fondo.png")
 
- 	game.addVisualCharacter(personaje)
+	keyboard.g().onPressDo({granja.personaje.cambiarGenero()})
+ 	game.addVisualCharacter(granja.personaje)
  	
 
  	//  COMIENZA
